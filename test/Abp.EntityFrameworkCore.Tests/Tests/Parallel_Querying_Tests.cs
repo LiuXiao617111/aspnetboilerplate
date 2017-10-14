@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 using Abp.Dependency;
@@ -23,7 +21,7 @@ namespace Abp.EntityFrameworkCore.Tests.Tests
             _parallelQueryExecuteDemo = Resolve<ParallelQueryExecuteDemo>();
         }
 
-        [Fact]
+        //[Fact]
         public async Task Should_Run_Parallel_With_Different_UnitOfWorks()
         {
             await _parallelQueryExecuteDemo.RunAsync();
